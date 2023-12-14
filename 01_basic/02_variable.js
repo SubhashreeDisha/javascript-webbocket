@@ -47,7 +47,7 @@
           1.number
           2.string
           3.boolean
-          4.bigint
+          4.bigint//
           5.undefined
           6.null
           7.symbol
@@ -55,7 +55,7 @@
 
       2.reference datatype
           1.[]
-          2.{}
+          2.{}//
           3.()
 
           example
