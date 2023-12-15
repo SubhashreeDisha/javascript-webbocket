@@ -46,10 +46,10 @@
         
         function loginUserMessage (username = "Rakhi"){
             if(username === undefined){
-                console.log(${username}, please enter valid username);
+                console.log(`${username}, please enter valid username`);
                 return
             }
-            console.log(${username},just loggedin);
+            console.log(`${username},just loggedin`);
         }
         loginUserMessage("Saneay");
         
@@ -76,10 +76,10 @@
             function parentFunction(username){
             
                 function childFunction(location,num1,num2){
-                    console.log(currently I'm at office location is ${location}.);
+                    console.log(`currently I'm at office location is ${location}.`);
                     return num1+num2;
                 }
-                console.log(Hello Everybody ${username});
+                console.log(`Hello Everybody ${username}`);
                 sum11 = childFunction("Kolathia",10,20);     //childFunction is only access/call inside the parentFunction. 
                 console.log(sum11);                          // you can't access/call inside the parentFunction.
             }
@@ -118,11 +118,11 @@
                 id : 101,
                 location : "bbsr",
                 functionName(){
-                    console.log(hello username is ${this.name});
+                    console.log(`hello username is ${this.name}`);
                     console.log(this);
                 }
             };
-            console.log(hello ${this.name});   // output: hello undefined
+            console.log(`hello ${this.name}`);   // output: hello undefined
             obj1.functionName();                 // output: hello username is abc
                                                  // {
                                                  //   name: 'abc',
@@ -157,5 +157,5 @@
             })();       //if we are defining more than one iife function then we need to properly closed the first function by using semi colon ";".
             
             ((name) => {
-                console.log(database fetched from this table ${name})
+                console.log(`database fetched from this table ${name}`)
             })("Student_information");
